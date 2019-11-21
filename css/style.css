@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    font-weight: normal;
+}
+
+main{
+    height: 100vh;
+    background-image: url('../image/hotel.jpg');
+    background-size: cover;
+    background-position-y: -100px;
+    position: relative;
+    z-index: 2;
+}
+.popup{
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    background-color: red;
+}
+div{
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.room{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: rgba(0, 128, 0, 0.541);
+    border-radius: 50%;
+    box-shadow: 3px 8px 5px 1px;
+    animation: room 1s linear infinite alternate;
+}
+.room a {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rOne{
+    top: 40%;
+    left: 10%;
+}
+#rTwo{
+    top: 30%;
+    left:50%;
+}
+#rThree{
+    top: 60%;
+    left: 30%;
+}
+#rFour{
+    top: 70%;
+    right: 30%;
+}
+
+
+
+.container{
+    height: 18vh;
+    width: 100vw;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+h1{
+    color: snow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+nav{
+   
+    width: 100vw;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+nav ul{
+    display: flex;
+}
+nav ul li {
+    padding:10px 30px;
+    list-style-type: none;
+
+}
+nav ul li a {
+    color: snow;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+@keyframes room{
+    0%{
+        box-shadow: 0px 0px 5px 0px;
+        background-color: rgba(0, 128, 0, 0.541);
+    }
+    100%{
+        box-shadow: 10px 10px 15px 0px;
+        background-color: rgba(0, 128, 0, 0.801);
+    }
+}
