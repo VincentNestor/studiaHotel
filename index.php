@@ -1,23 +1,5 @@
 <?php
-
 $mysqli = new mysqli('localhost', 'root', '', 'hotel');
-
-  if (!mysqli_connect_errno()){
-      
-    $sql= "SELECT imie FROM hotel WHERE id = '1'";
-    
-    if( $result = $mysqli->query($sql) ){
-
-      if( $data = mysqli_fetch_array($result) ){
-        echo count($data);
-      }
-      else echo 'niedostepny';
-      
-    }
-    
-  }
-  else echo 'Bład polaczneie'; 
-
 
 ?>
 <!DOCTYPE html>
@@ -43,10 +25,133 @@ $mysqli = new mysqli('localhost', 'root', '', 'hotel');
     </ul></nav>
     </div>
         <div></div>
-        <div class="room" id="rOne"><a href="areaone.php">dfdf</a></div>
-        <div class="room" id="rTwo"></div>
-        <div class="room" id="rThree"></div>
-        <div class="room" id="rFour"></div>
+        <div class="room" id="rOne"><a href="areaone.php">
+    <?php
+$countOne = 0;
+
+
+  if (!mysqli_connect_errno()){
+      
+    $sqlOne= "SELECT imie FROM hotel WHERE id = '1'";
+
+    
+    if( $result = $mysqli->query($sqlOne) ){
+
+      if( $data = mysqli_fetch_array($result) ){
+        while($data = mysqli_fetch_array($result)){
+         ++$countOne;
+         }
+         echo $countOne + 1;
+         echo '</br>';
+      }
+      else echo 'Nie ma gości';
+      
+    }
+    
+  }
+  else echo 'Bład połączenia'; 
+
+
+?>
+</a></div>
+        <div class="room" id="rTwo"><a href="areatwo.php">
+
+
+        <?php
+
+
+  if (!mysqli_connect_errno()){
+      
+    $sqlTwo= "SELECT imie FROM hotel WHERE id = '2'";
+
+    
+    if( $resultTwo = $mysqli->query($sqlTwo) ){
+
+      if( $dataTwo = mysqli_fetch_array($resultTwo) ){
+        while($dataTwo = mysqli_fetch_array($resultTwo)){
+         ++$countTwo;
+         }
+         echo $countTwo + 1;
+         echo '</br>';
+         
+         $mysqli->close();
+      }
+      else echo 'Nie ma gości';
+      
+    }
+    
+  }
+  else echo 'Bład połączenia'; 
+
+
+?>
+
+
+
+        </a>
+        
+      
+      </div>
+        <div class="room" id="rThree"><a href="areathree.php">
+        <?php
+
+
+  if (!mysqli_connect_errno()){
+      
+    $sqlThree= "SELECT imie FROM hotel WHERE id = '3'";
+
+    
+    if( $resultThree = $mysqli->query($sqlThree) ){
+
+      if( $dataThree = mysqli_fetch_array($resultThree) ){
+        while($dataThree = mysqli_fetch_array($resultThree)){
+         ++$countThree;
+         }
+         echo $countThree + 1;
+         echo '</br>';
+      }
+      else echo 'Nie ma gości';
+      
+    }
+    
+  }
+  else echo 'Bład połączenia'; 
+
+
+?>
+
+        </a></div>
+        <div class="room" id="rFour"><a href="areafour.php">
+
+        <?php
+
+
+
+  if (!mysqli_connect_errno()){
+      
+    $sqlFour= "SELECT imie FROM hotel WHERE id = '4'";
+
+    
+    if( $resultFour = $mysqli->query($sqlFour) ){
+
+      if( $dataFour = mysqli_fetch_array($resultFour) ){
+        while($dataFour = mysqli_fetch_array($resultFour)){
+         ++$countFour;
+         }
+         echo $countFour + 1;
+         echo '</br>';
+      }
+      else echo 'Nie ma gości';
+      
+    }
+    
+  }
+  else echo 'Bład połączenia'; 
+
+
+?>
+
+        </a></div>
     </main>
     <script src="./js/index.js"></script>
 </body>

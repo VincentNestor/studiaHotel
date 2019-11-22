@@ -8,36 +8,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-aside {
-    min-height: 85vh;
-    width: 90vw;
-    background: rgba(143, 34, 34, 0.534);
-    position: relative;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-    overflow: hidden;
-    color: #fff;
-    font-weight: 100;
-    letter-spacing: 3px;
-    border-radius: 2px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-aside::before {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    bottom: -20px;
-    background-attachment: fixed;
-    background-position: center;
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
-    filter: blur(4px);
-
+    background-image: url('../image/bed.jpg');
 }
 form{
     position: relative;
