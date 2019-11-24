@@ -14,17 +14,7 @@ main{
     position: relative;
     z-index: 2;
 }
-.popup{
-    display: none;
-    position: absolute;
-    z-index: 3;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-    height: 70%;
-    background-color: red;
-}
+
 div{
     height: 100%;
     background-color: rgba(0,0,0,0.5);
@@ -36,7 +26,7 @@ div{
     background-color: rgba(0, 128, 0, 0.541);
     border-radius: 50%;
     box-shadow: 3px 8px 5px 1px;
-    animation: room 1s linear infinite alternate;
+    animation: paulina 1s linear infinite alternate;
 }
 .room a:hover {
     height: 140%;
@@ -117,7 +107,7 @@ nav ul li a {
 }
 
 
-@keyframes room{
+@keyframes paulina{
     0%{
         box-shadow: 0px 0px 5px 0px;
         background-color: rgba(0, 128, 0, 0.541);

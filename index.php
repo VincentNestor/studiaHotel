@@ -12,17 +12,17 @@ $mysqli = new mysqli('localhost', 'root', '', 'hotel');
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body> 
-<div class="popup">
-        Panel z rezerwacją w trakcie remontu :)
-    </div> 
+
     <main>
     
     <div class="container">
     <h1>Hotel Transylwania</h1>
-    <nav><ul>
+    <nav>
+      <ul>
         <li><a href="http://" target="_blank" rel="noopener noreferrer">Galeria</a></li>
         <li><a href="http://" target="_blank" rel="noopener noreferrer">Kontakt</a></li>
-    </ul></nav>
+    </ul>
+  </nav>
     </div>
         <div></div>
         <div class="room" id="rOne"><a href="areaone.php">Rezerwuj</a>
