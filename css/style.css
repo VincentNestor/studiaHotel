@@ -38,6 +38,14 @@ div{
     box-shadow: 3px 8px 5px 1px;
     animation: room 1s linear infinite alternate;
 }
+.room a:hover {
+    height: 140%;
+    width: 140%;
+    background-color: rgb(30, 121, 45);
+    transition: .5s;
+    opacity: 1;
+    
+}
 .room a {
     height: 100%;
     width: 100%;
@@ -51,7 +59,8 @@ div{
     color: snow;
     font-size: 20px;
     text-decoration: none;
-
+    border-radius: 50%;
+    opacity: 0;
 }
 #rOne{
     top: 40%;
@@ -69,8 +78,6 @@ div{
     top: 70%;
     right: 30%;
 }
-
-
 
 .container{
     height: 18vh;

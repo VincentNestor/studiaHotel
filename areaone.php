@@ -12,7 +12,7 @@
     <main>
         <aside>
 
-        <form  method="post">
+        <form action="areaone.php" method="post">
 
             <input type="text" name="imie"  placeholder="Imię" id="">
             <input type="text" name="nazwisko" placeholder="Nazwisko" id="">
@@ -40,7 +40,7 @@
         echo $nazwisko;
         echo $dni;
 
-        $sql = "INSERT INTO hotel (id, imie, nazwisko, dni) VALUES ('3', '$imie', '$nazwisko', '$dni')";
+        $sql = "INSERT INTO hotel (imie, id, nazwisko, dni) VALUES ('$imie', '1', '$nazwisko', '$dni')";
 
         if( $mysqli->query($sql) ){
            echo "Film  został dodany do bazy";

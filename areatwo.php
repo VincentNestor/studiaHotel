@@ -12,7 +12,7 @@
     <main>
         <aside>
 
-        <form action="areaone.php" method="post">
+        <form action="areatwo.php" method="post">
             <input type="text" name="imie"  placeholder="Imię" id="">
             
             <input type="text" name="nazwisko" placeholder="Nazwisko" id="">
